@@ -1,7 +1,10 @@
-* {
-	font-family: "Poppins", sans-serif;
+/* * {
 	margin: 0;
 	padding: 0;
+} */
+
+body {
+	font-family: "Poppins", sans-serif;
 }
 
 .dropdown-toggle::after {
@@ -28,6 +31,22 @@
 	border-bottom-left-radius: 20px;
 	border-top-left-radius: 20px;
 }
+/* carousel */
+.carousel-item {
+	height: 32rem;
+}
+
+/* sejarah */
+.kotak-sejarah {
+	max-height: 406px;
+	min-height: 406px;
+	margin-top: 300px;
+	margin-bottom: 300px;
+	border-radius: 15px;
+	border: 1px solid #edf2fb;
+	background-color: #edf2fb;
+}
+
 /* footer */
 .table tr {
 	border: hidden;
@@ -36,4 +55,10 @@
 	color: #fff;
 	font-size: 15px;
 	font-weight: 500;
+}
+
+footer {
+	height: 300px;
+	bottom: 0;
+	width: 100%;
 }
