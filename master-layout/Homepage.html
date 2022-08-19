@@ -10,13 +10,16 @@
 			rel="stylesheet"
 			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
 			crossorigin="anonymous"
+			
 		/>
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="parallax.min.js"></script>
 	</head>
-	<body>
+	<body style="background-color: #EDF2FB;">
 		<!-- Header -->
 		<header>
 			<!-- Star-Navbar -->
@@ -37,7 +40,7 @@
 						<!--Menu Navbar-->
 					<!-- <div class="col-7"> -->
 						<button
-							class="navbar-toggler"
+						d	class="navbar-toggler"
 							type="button"
 							data-bs-toggle="collapse"
 							data-bs-target="#navbarSupportedContent"
@@ -57,7 +60,7 @@
 										role="button"
 										data-bs-toggle="dropdown"
 										aria-expanded="false"
-										style="color: #241a71; font-weight: 600; font-size: 15px"
+										style="color: #054389; font-weight: 600; font-size: 15px"
 									>
 										Profile
 									</a>
@@ -77,13 +80,13 @@
 										role="button"
 										data-bs-toggle="dropdown"
 										aria-expanded="false"
-										style="color: #241a71; font-weight: 600; font-size: 15px"
+										style="color: #054389; font-weight: 600; font-size: 15px"
 									>
 										Berita
 									</a>
 									<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-										<li><a class="dropdown-item" href="#">Berita Diskominfo</a></li>
-										<li><a class="dropdown-item" href="#">Berita Cimahi</a></li>
+										<li><a class="dropdown-item" href="Arsip Berita.html">Berita Diskominfo</a></li>
+										<li><a class="dropdown-item" href="Berita Seputar Cimahi.html">Berita Cimahi</a></li>
 									</ul>
 								</li>
 								<li class="nav-item dropdown mx-1">
@@ -94,7 +97,7 @@
 										role="button"
 										data-bs-toggle="dropdown"
 										aria-expanded="false"
-										style="color: #241a71; font-weight: 600; font-size: 15px"
+										style="color: #054389; font-weight: 600; font-size: 15px"
 									>
 										Galeri
 									</a>
@@ -113,15 +116,15 @@
 										role="button"
 										data-bs-toggle="dropdown"
 										aria-expanded="false"
-										style="color: #241a71; font-weight: 600; font-size: 15px"
+										style="color: #054389; font-weight: 600; font-size: 15px"
 									>
 										Layanan
 									</a>
 									<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-										<li><a class="dropdown-item" href="#">Pesan Penduduk</a></li>
-										<li><a class="dropdown-item" href="#">SILATIK</a></li>
-										<li><a class="dropdown-item" href="#">Smartcity</a></li>
-										<li><a class="dropdown-item" href="#">PPID</a></li>
+										<li><a class="dropdown-item" href="https://pesduk.cimahikota.go.id/">Pesan Penduduk</a></li>
+										<li><a class="dropdown-item" href="https://silatik.cimahikota.go.id/landing">SILATIK</a></li>
+										<li><a class="dropdown-item" href="https://smartcity.cimahikota.go.id/">Smartcity</a></li>
+										<li><a class="dropdown-item" href="https://ppid.cimahikota.go.id/">PPID</a></li>
 									</ul>
 								</li>
 								<li class="nav-item dropdown mx-1">
@@ -132,14 +135,14 @@
 										role="button"
 										data-bs-toggle="dropdown"
 										aria-expanded="false"
-										style="color: #241a71; font-weight: 600; font-size: 15px"
+										style="color: #054389; font-weight: 600; font-size: 15px"
 									>
 										Informasi
 									</a>
 									<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-										<li><a class="dropdown-item" href="#">Pengumuman</a></li>
+										<li><a class="dropdown-item" href="Arsip Pengumuman.html">Pengumuman</a></li>
 										<li>
-											<a class="dropdown-item" href="#">Agenda</a>
+											<a class="dropdown-item" href="Arsip Agenda.html">Agenda</a>
 										</li>
 									</ul>
 								</li>
@@ -151,7 +154,7 @@
 										role="button"
 										data-bs-toggle="dropdown"
 										aria-expanded="false"
-										style="color: #241a71; font-weight: 600; font-size: 15px"
+										style="color: #054389; font-weight: 600; font-size: 15px"
 									>
 										Publikasi
 									</a>
@@ -167,8 +170,8 @@
 									<a
 										class="nav-link"
 										aria-current="page"
-										href="#"
-										style="color: #241a71; font-weight: 600; font-size: 15px"
+										href="Hubungi Kami.html"
+										style="color: #054389; font-weight: 600; font-size: 15px"
 										>Hubungi kami
 									</a>
 								</li>
@@ -202,20 +205,21 @@
 
 		<!-- Content -->
 		<section>
+			<!-- carosel -->
 			<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-				<div class="carousel-indicators">
-					<button  type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-				</div>
+				<ol class="carousel-indicators">
+					<li  data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></li>
+					<li  data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></li>
+					<li  data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></li>
+				</ol>
 				<div class="carousel-inner">
-					<div class="carousel-item active">
+					<div class="carousel-item active" style="height: 32rem;">
 					<img src="asset/Homepage/Carousel1.png" class="d-block w-100" alt="...">
 					</div>
-					<div class="carousel-item">
+					<div class="carousel-item" style="height: 32rem;">
 					<img src="asset/Homepage/Carousel2.png" class="d-block w-100" alt="...">
 					</div>
-					<div class="carousel-item">
+					<div class="carousel-item" style="height: 32rem;">
 					<img src="asset/Homepage/Carousel3.png" class="d-block w-100" alt="...">
 					</div>
 				</div>
@@ -228,29 +232,32 @@
 						<span class="visually-hidden">Next</span>
 					</button>
 			</div>
-			
-			<div class="container py-5">
+			<!-- end carosel -->
+
+			<div class="container-fluid">
 				<!-- Visi -->
-				<div class="row">
+				
+				<div class="row visi">
 					<div class="col-12">
 						&nbsp;
-						<p class="text-center py-5" style="font-size: 24px; font-weight:700;">
+						<p class="text-center py-5" style="font-size: 24px; font-weight:700; padding: 150px;">
 							Terwujudnya Pusat Layanan  Informasi, Komunikasi, Informatika, Statistik, Persandian Untuk Mencapai Kota, Pemerintahan Dan Masyarakat Cimahi Yang Smart 
 						</p>
 						&nbsp;
 					</div>
 				</div>
 				<!-- endVIsi -->
-
+			</div>
 				<!-- Layanan -->
+			<div class="container">		
 				<div class="row">
 					<div class="col-12 text-center">
-						<h1 class="py-5">
+						<h1 class="pb-5" style="font-size: 30; font-weight: 800;">
 							Layanan
 						</h1>
 						<div class="d-flex justify-content-center">		
 							<div class="card mx-4" style="width: 181px; height: 255; border-radius: 15px;">
-								<img src="asset/Struktur organisasi/model1.jpg" class="card-img-top p-3" alt="...">
+								<img src="asset/Homepage/layanan/pesanpend.png" class="card-img-top p-4" alt="...">
 								<div class="card-body">
 									<h5 class="card-title" style="font-size: 16px; font-weight:700;">Pesan Penduduk</h5>
 									<p class="card-text" style="font-size: 8px; font-weight:400;">Sarana komunikasi penghubung antar masyarakat dan pemangku kebijakan untuk memperbaiki kondisi kota cimahi </p>
@@ -258,7 +265,7 @@
 							</div>
 
 							<div class="card mx-4" style="width: 181px; height: 255; border-radius: 15px;">
-								<img src="asset/Struktur organisasi/model1.jpg" class="card-img-top p-3" alt="...">
+								<img src="asset/Homepage/layanan/Opendata.png" class="card-img-top p-4" alt="...">
 								<div class="card-body">
 									<h5 class="card-title" style="font-size: 16px; font-weight:700;">Cimahi Open Data</h5>
 									<p class="card-text" style="font-size: 8px; font-weight:400;">Sarana komunikasi penghubung antar masyarakat dan pemangku kebijakan untuk memperbaiki kondisi kota cimahi </p>
@@ -266,7 +273,7 @@
 							</div>
 
 							<div class="card mx-4" style="width: 181px; height: 255; border-radius: 15px;">
-								<img src="asset/Struktur organisasi/model1.jpg" class="card-img-top p-3" alt="...">
+								<img src="asset/Homepage/layanan/silatik.png" class="card-img-top p-4" alt="...">
 								<div class="card-body">
 									<h5 class="card-title" style="font-size: 16px; font-weight:700;">SILATIK</h5>
 									<p class="card-text" style="font-size: 8px; font-weight:400;">Sarana komunikasi penghubung antar masyarakat dan pemangku kebijakan untuk memperbaiki kondisi kota cimahi </p>
@@ -274,7 +281,7 @@
 							</div>
 
 							<div class="card mx-4" style="width: 181px; height: 255; border-radius: 15px;">
-								<img src="asset/Struktur organisasi/model1.jpg" class="card-img-top p-3" alt="...">
+								<img src="asset/Homepage/layanan/smartcity.png" class="card-img-top p-4" alt="...">
 								<div class="card-body">
 									<h5 class="card-title" style="font-size: 16px; font-weight:700;">Cimahi Smart City</h5>
 									<p class="card-text" style="font-size: 8px; font-weight:400;">Sarana komunikasi penghubung antar masyarakat dan pemangku kebijakan untuk memperbaiki kondisi kota cimahi </p>
@@ -282,7 +289,7 @@
 							</div>
 
 							<div class="card mx-4" style="width: 181px; height: 255; border-radius: 15px;">
-								<img src="asset/Struktur organisasi/model1.jpg" class="card-img-top p-3" alt="...">
+								<img src="asset/Homepage/layanan/ppid.png" class="card-img-top p-4" alt="...">
 								<div class="card-body">
 									<h5 class="card-title" style="font-size: 16px; font-weight:700;">PPID</h5>
 									<p class="card-text" style="font-size: 8px; font-weight:400;">Sarana komunikasi penghubung antar masyarakat dan pemangku kebijakan untuk memperbaiki kondisi kota cimahi </p>
@@ -293,61 +300,70 @@
 				</div>
 				<!-- endLayanan -->
 			</div>
-
+			
+			<!-- paralax -->
+		
 			<div class="container-fluid py-5">
-				<div class="row">
-					<!-- unit kerja -->
-					<div class="col-1"></div>
-					<div class="col-5 text-center">
-						<h2 style="font-size: 30px; font-weight:700">Unit kerja</h2>
-						<ul class="text-start" style="list-style: none; margin-left:140px; margin-right: auto; font-size: 25px; font-weight: 700;">
-							<li>
-								<img src="asset/Homepage/Sekretariatt.png" alt="">
-								<span> &nbsp; Sekretariat</span>	
-							</li>
-							<li> 
-								<img src="asset/Homepage/E-govv.png" alt="">
-								<span> &nbsp; E-Gov</span>
-							</li>
-							<li>
-								<img src="asset/Homepage/IKAPE.png" alt="">
-								<span> &nbsp; IKP</span>
-							</li>
-						</ul>
-					</div>
-					<!-- end unit kerja -->
-					<!-- Penghargaan -->
-					<div class="col-5">
-						<div class="container text-center" style="border: 1px solid fff; width: 268px; height: 324px; border-radius: 15px; background-color: #fff;" >
-							<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-								<div class="carousel-inner">
-									<div class="carousel-item active">
-									<img style="width: 181px; height: 224px; margin-top: 47px; margin-bottom: auto; border-radius: 15px;" src="asset/Homepage/penghargaan.png" alt="Penghargaan">
-									</div>
-									<div class="carousel-item">
-									<img style="width: 181px; height: 224px; margin-top: 47px; margin-bottom: auto; border-radius: 15px;" src="asset/Homepage/penghargaan.png" alt="Penghargaan">
-									</div>
-									<div class="carousel-item">
-									<img style="width: 181px; height: 224px; margin-top: 47px; margin-bottom: auto; border-radius: 15px;" src="asset/Homepage/penghargaan.png" alt="Penghargaan">
+					<div class="parallax">
+						<div class="overplay">
+							<div class="row" style="padding-top: 80px;">
+								<!-- unit kerja -->
+								<div class="col-1"></div>
+								<div class="col-5 text-center">
+									<h2 style="font-size: 30px; font-weight:700; color: #fff;">Unit kerja</h2>
+									<ul class="text-start py-4" style="list-style: none; margin-left:140px; margin-right: auto; font-size: 25px; font-weight: 700;">
+										<li>
+											<img src="asset/Homepage/Sekretariatt.png" alt="">
+											<span style="color: #fff; "> &nbsp; Sekretariat</span>	
+										</li>
+										<li> 
+											<img src="asset/Homepage/E-govv.png" alt="">
+											<span style="color: #fff;"> &nbsp; E-Gov</span>
+										</li>
+										<li>
+											<img src="asset/Homepage/IKAPE.png" alt="">
+											<span style="color: #fff;"> &nbsp; IKP</span>
+										</li>
+									</ul>
+								</div>
+								<!-- end unit kerja -->
+								<!-- Penghargaan -->
+								<div class="col-5">
+									<div class="container text-center" style="border: 1px solid #fff; width: 268px; height: 324px; border-radius: 15px; background-color: #fff;" >
+										<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+											<div class="carousel-inner">
+												<div class="carousel-item active">
+												<img style="width: 181px; height: 224px; margin-top: 47px; margin-bottom: auto; border-radius: 15px;" src="asset/Homepage/penghargaan.png" alt="Penghargaan">
+												</div>
+												<div class="carousel-item">
+												<img style="width: 181px; height: 224px; margin-top: 47px; margin-bottom: auto; border-radius: 15px;" src="asset/Homepage/penghargaan.png" alt="Penghargaan">
+												</div>
+												<div class="carousel-item">
+												<img style="width: 181px; height: 224px; margin-top: 47px; margin-bottom: auto; border-radius: 15px;" src="asset/Homepage/penghargaan.png" alt="Penghargaan">
+												</div>
+											</div>
+											<button style="padding-bottom: 180px; padding-top: auto;" class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+												<!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+												<span class="visually-hidden">Previous</span>
+											</button>
+											<button style="padding-bottom: 180px; padding-top: auto;" class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+												<!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+												<span class="visually-hidden">Next</span>
+											</button>
+										</div>
 									</div>
 								</div>
-								<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-									<span class="visually-hidden">Previous</span>
-								</button>
-								<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-									<span class="carousel-control-next-icon" aria-hidden="true"></span>
-									<span class="visually-hidden">Next</span>
-								</button>
+								<!-- end Penghargaan -->
+								<div class="col-1 "></div>
 							</div>
 						</div>
 					</div>
-					<!-- end Penghargaan -->
-					<div class="col-1"></div>
-				</div>
 			</div>
-			<div class="container">
-				<div class="row">
+			<!-- end paralax -->
+			
+			<!-- Berita -->
+			<div class="container-fluid my-3"style="background-color: #fff;">
+				<div class="row pt-4">
 					<div class="col-1"></div>
 					<div class="col-2">
 						<a class="btn" style="width: 224px; height: 42px; font-size: 20px; font-weight: 400; border-radius: 15px; background-color: #EDF2FB; color: #054389; " href="">Berita Diskominfo</a>
@@ -360,41 +376,265 @@
 				<div class="row">
 					<div class="col-12 py-5">
 						<div class="d-flex justify-content-center">
-							<div class="card mx-4" style="width: 181px; height: 255; border-radius: 15px;">
-									<img src="asset/Struktur organisasi/model1.jpg" class="card-img-top p-3" alt="...">
-									<div class="card-body">
-										<h5 class="card-title" style="font-size: 16px; font-weight:700;">Pesan Penduduk</h5>
-										<p class="card-text" style="font-size: 8px; font-weight:400;">Sarana komunikasi penghubung antar masyarakat dan pemangku kebijakan untuk memperbaiki kondisi kota cimahi </p>
+							<div class="card mx-4" style="width: 242px; height: 396px; border-radius: 15px;  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.4);">
+									<img src="asset/Homepage/berita/Rectangle 64 (3).png" class="card-img-top" alt="...">
+									<div class="card-body text-center">
+										<h5 class="card-title text-start" style="font-size: 15px; font-weight:700;">Pos Paud Melati Kenalkan Perpustakaan</h5>
+										<span style="font-size: 8px; font-weight:700;"> Wednesday, 20 Feb 2019 - </span> <br>
+										<p class="card-text text-start" style="font-size: 10px; font-weight:400;">Perpustakaan Umum Kota Cimahi hari ini (20/02/2019) menerima kunjungan dari Pos Paud Melati 17. Kunjungan ini merupakan agenda ...</p>
 									</div>
 							</div>
 
-							<div class="card mx-4" style="width: 181px; height: 255; border-radius: 15px;">
-									<img src="asset/Struktur organisasi/model1.jpg" class="card-img-top p-3" alt="...">
-									<div class="card-body">
-										<h5 class="card-title" style="font-size: 16px; font-weight:700;">Pesan Penduduk</h5>
-										<p class="card-text" style="font-size: 8px; font-weight:400;">Sarana komunikasi penghubung antar masyarakat dan pemangku kebijakan untuk memperbaiki kondisi kota cimahi </p>
+							<div class="card mx-4" style="width: 242px; height: 396px; border-radius: 15px;  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.4);">
+									<img src="asset/Homepage/berita/Rectangle 64 (2).png" class="card-img-top" alt="...">
+									<div class="card-body text-center">
+										<h5 class="card-title text-start" style="font-size: 15px; font-weight:700;">Pelatihan IT Kreatif Tahun 2019</h5>
+										<span style="font-size: 8px; font-weight:700;"> Tuesday, 06 Aug 2019 - Diskominfo </span> <br>
+										<p class="card-text text-start" style="font-size: 10px; font-weight:400;">Dalam rangka untuk meningkatkan pemahaman warga tentang pemanfaatan teknologi informasi, Dinas Komunikasi, Informatika ...</p>
 									</div>
 							</div>
 
-							<div class="card mx-4" style="width: 181px; height: 255; border-radius: 15px;">
-									<img src="asset/Struktur organisasi/model1.jpg" class="card-img-top p-3" alt="...">
-									<div class="card-body">
-										<h5 class="card-title" style="font-size: 16px; font-weight:700;">Pesan Penduduk</h5>
-										<p class="card-text" style="font-size: 8px; font-weight:400;">Sarana komunikasi penghubung antar masyarakat dan pemangku kebijakan untuk memperbaiki kondisi kota cimahi </p>
+							<div class="card mx-4" style="width: 242px; height: 396px; border-radius: 15px;  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.4);">
+									<img src="asset/Homepage/berita/Rectangle 64 (1).png" class="card-img-top" alt="...">
+									<div class="card-body text-center">
+										<h5 class="card-title text-start" style="font-size: 15px; font-weight:700;">Pemkot Cimahi Sosialisasi Perubahan ...</h5>
+										<span style="font-size: 8px; font-weight:700;"> Thursday, 30 Jun 2022 - Bambang S. </span> <br>
+										<p class="card-text text-start" style="font-size: 10px; font-weight:400;">CIMAHI.- Pemerintah Kota Cimahi mensosialisasikan perubahan Peraturan Daerah (Perda) Ketertiban Umum Kota Cimahi ...</p>
 									</div>
 							</div>
 
-							<div class="card mx-4" style="width: 181px; height: 255; border-radius: 15px;">
-									<img src="asset/Struktur organisasi/model1.jpg" class="card-img-top p-3" alt="...">
-									<div class="card-body">
-										<h5 class="card-title" style="font-size: 16px; font-weight:700;">Pesan Penduduk</h5>
-										<p class="card-text" style="font-size: 8px; font-weight:400;">Sarana komunikasi penghubung antar masyarakat dan pemangku kebijakan untuk memperbaiki kondisi kota cimahi </p>
+							<div class="card mx-4" style="width: 242px; height: 396px; border-radius: 15px;  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.4);">
+									<img src="asset/Homepage/berita/Rectangle 64.png" class="card-img-top" alt="...">
+									<div class="card-body text-center">
+										<h5 class="card-title text-start" style="font-size: 15px; font-weight:700;">Website Diskominfoarpus Kota ..</h5>
+										<span style="font-size: 8px; font-weight:700;"> Friday, 12 Apr 2019 - Diskominfo</span> <br>
+										<p class="card-text text-start" style="font-size: 10px; font-weight:400;">Setelah selama ini fokus mengelola Website Kota Cimahi, mulai tahun 2019, Dinas Komunikasi Informatika Kearsipan dan Perpustakaan (DISKOMINFOARPUS) ...</p>
 									</div>
 							</div>
 						</div>
 				</div>
+				</div>
 			</div>
+			<!-- end Berita -->
+			
+			<!-- Agenda Pengumuman -->
+			<div class="container">
+				<div class="row">
+					<div class="col-1"></div>
+					<div class="col-6">
+						<h1 style="font-size: 36px; font-weight: 700;">
+							Agenda
+						</h1>
+					</div>
+					<div class="col-4" >
+						<h1 style="font-size: 36px; font-weight: 700;">
+							Pengumuman
+						</h1>
+					</div>
+					<div class="col-1"></div>
+				</div>
+				<div class="row">
+					<div class="col-1"></div>
+					<!-- card Agenda -->
+					<div class="col-6">
+						<div class="card mb-3" style="max-width: 640px; box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.4); border-radius: 15px;">
+							<div class="row g-0">
+								<div class="col-md-4">
+								<img src="asset/Homepage/agenda.png" class="img-fluid rounded-start" style="padding: 10px;" alt="foto agenda">
+								</div>
+								<div class="col-md-8">
+									<div class="card-body py-4">
+										<h5 class="card-title" style="font-size: 14px; font-weight: 700;">PROGRAM PELATIHAN DIGITAL ENTREPRENEURSHIP ACADEMY(DEA) 2021 DI JAWA BARAT</h5>
+										<p class="card-text" style="font-size: 14px; font-weight: 400; color: #646464;">
+											<span>
+												Tanggal: 18 Juli 2022 - 20 Juli 2022 
+											</span>
+											<br>
+											<span>
+												Waktu: 9.00 - 11.00 WIB
+											</span>
+											<br>
+											<span>
+												Lokasi: Kota Cimahi
+											</span>
+											<br>
+											<a href="#">Lihat selengkapnya...</a>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="card mb-3" style="max-width: 640px; box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.4); border-radius: 15px;">
+							<div class="row g-0">
+								<div class="col-md-4">
+								<img src="asset/Homepage/agenda.png" class="img-fluid rounded-start" style="padding: 10px;" alt="foto agenda">
+								</div>
+								<div class="col-md-8">
+									<div class="card-body py-4">
+										<h5 class="card-title" style="font-size: 14px; font-weight: 700;">PROGRAM PELATIHAN DIGITAL ENTREPRENEURSHIP ACADEMY(DEA) 2021 DI JAWA BARAT</h5>
+										<p class="card-text" style="font-size: 14px; font-weight: 400; color: #646464;">
+											<span>
+												Tanggal: 18 Juli 2022 - 20 Juli 2022 
+											</span>
+											<br>
+											<span>
+												Waktu: 9.00 - 11.00 WIB
+											</span>
+											<br>
+											<span>
+												Lokasi: Kota Cimahi
+											</span>
+											<br>
+											<a href="#">Lihat selengkapnya...</a>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
 
+						<div class="card mb-3" style="max-width: 640px; box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.4); border-radius: 15px;">
+							<div class="row g-0">
+								<div class="col-md-4">
+								<img src="asset/Homepage/agenda.png" class="img-fluid rounded-start" style="padding: 10px;" alt="foto agenda">
+								</div>
+								<div class="col-md-8">
+									<div class="card-body py-4">
+										<h5 class="card-title" style="font-size: 14px; font-weight: 700;">PROGRAM PELATIHAN DIGITAL ENTREPRENEURSHIP ACADEMY(DEA) 2021 DI JAWA BARAT</h5>
+										<p class="card-text" style="font-size: 14px; font-weight: 400; color: #646464;">
+											<span>
+												Tanggal: 18 Juli 2022 - 20 Juli 2022 
+											</span>
+											<br>
+											<span>
+												Waktu: 9.00 - 11.00 WIB
+											</span>
+											<br>
+											<span>
+												Lokasi: Kota Cimahi
+											</span>
+											<br>
+											<a href="#">Lihat selengkapnya...</a>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<!-- end card Agenda -->
+					<!-- pengumuman -->
+					<div class="col-4" style="border: 1px solid #c5c5c5; border-radius: 15px; background-color: #fff; box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.4);">
+						<div class="card mb-3 my-4" style="max-width: 540px; border: hidden;">
+							<div class="row g-0">
+								<div class="col-md-4">
+								<img src="asset/Homepage/agenda.png" class="img-fluid rounded-start" style="padding: 10px; width: 127px; height: 181px;" alt="foto agenda">
+								</div>
+								<div class="col-md-8">
+									<div class="card-body py-4">
+										<h5 class="card-title" style="font-size: 14px; font-weight: 700;">Lorem ipsum dolor sit amet.</h5>
+										<p class="card-text" style="font-size: 14px; font-weight: 400;"><span style="opacity: 0.44;">Tanggal</span> <br> Lorem ipsum dolor sit amet. Vitae interdum in feugiat augue tincidunt. Mattis amet non eros, nulla. <br> <a href="">Lihat selengkapnya...</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="card mb-3 my-4" style="max-width: 540px; border: hidden;">
+							<div class="row g-0">
+								<div class="col-md-4">
+								<img src="asset/Homepage/agenda.png" class="img-fluid rounded-start" style="padding: 10px; width: 127px; height: 181px;" alt="foto agenda">
+								</div>
+								<div class="col-md-8">
+									<div class="card-body py-4">
+										<h5 class="card-title" style="font-size: 14px; font-weight: 700;">Lorem ipsum dolor sit amet.</h5>
+										<p class="card-text" style="font-size: 14px; font-weight: 400;"><span style="opacity: 0.44;">Tanggal</span> <br> Lorem ipsum dolor sit amet. Vitae interdum in feugiat augue tincidunt. Mattis amet non eros, nulla. <br> <a href="">Lihat selengkapnya...</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="card mb-3 my-4" style="max-width: 540px; border: hidden;">
+							<div class="row g-0">
+								<div class="col-md-4">
+								<img src="asset/Homepage/agenda.png" class="img-fluid rounded-start" style="padding: 10px; width: 127px; height: 181px;" alt="foto agenda">
+								</div>
+								<div class="col-md-8">
+									<div class="card-body py-4">
+										<h5 class="card-title" style="font-size: 14px; font-weight: 700;">Lorem ipsum dolor sit amet.</h5>
+										<p class="card-text" style="font-size: 14px; font-weight: 400;"><span style="opacity: 0.44;">Tanggal</span> <br> Lorem ipsum dolor sit amet. Vitae interdum in feugiat augue tincidunt. Mattis amet non eros, nulla. <br> <a href="">Lihat selengkapnya...</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<!-- end pengumuman -->
+					<div class="col-1"></div>
+				</div>
+				
+			</div>
+			<!-- end Agenda Pengumuman -->
+
+			<!-- infografis -->
+			<div class="container py-5">
+				<div class="row">
+					<div class="col-12 text-center">
+						<h1 style="font-weight: 800; font-size:36px;">infografis</h1>
+					</div>
+					<div class="col-12">
+						<div class="container sliderr text-center my-3"> 
+							<div class="row mx-auto my-auto justify-content-center"> 
+								<div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel"> 
+									<div class="carousel-inner" role="listbox"> 
+										<div class="carousel-item active"> 
+											<div class="col-md-3"> 
+												<div class="card mx-4"> 
+													<div class="card-img"> 
+														<img src="asset/Homepage/infografis/INFOGRAFIS1.png" class="img-fluid">
+													</div>
+												</div>
+											</div>
+										</div>		
+										<div class="carousel-item"> 
+											<div class="col-md-3"> 
+												<div class="card mx-4"> 
+													<div class="card-img"> 
+														<img src="asset/Homepage/infografis/INFOGRAFIS2.png" class="img-fluid"> 
+													</div>
+												</div> 
+											</div> 
+										</div> 
+										
+										<div class="carousel-item"> 
+											<div class="col-md-3"> 
+												<div class="card mx-4"> 
+													<div class="card-img"> 
+														<img src="asset/Homepage/infografis/INFOGRAFIS2.png" class="img-fluid"> 
+													</div> 
+												</div> 
+											</div> 
+										</div> 
+										
+										<div class="carousel-item"> 
+											<div class="col-md-3"> 
+												<div class="card mx-4"> 
+													<div class="card-img"> 
+														<img src="asset/Homepage/infografis/INFOGRAFIS3.png" class="img-fluid"> 
+													</div> 
+												</div> 
+											</div> 
+										</div>
+									</div>
+									<a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="prev"> 
+										<span class="carousel-control-prev-icon" aria-hidden="true"></span> </a> 
+									<a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="next"> 
+										<span class="carousel-control-next-icon" aria-hidden="true"></span> </a>  
+								</div> 
+							</div> 
+						</div> 
+					</div>
+				</div>
+			</div>
 		</section>
 		
 		<!-- End-Content -->
@@ -465,5 +705,23 @@
 			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
 			crossorigin="anonymous"
 		></script>
+		<script>
+			let items = document.querySelectorAll('.sliderr .carousel .carousel-item')
+
+			items.forEach((el) => {
+				const minPerSlide = 4
+				let next = el.nextElementSibling
+				for (var i=1; i<minPerSlide; i++) {
+					if (!next) {
+						// wrap carousel by using first child
+						next = items[0]
+					}
+					let cloneChild = next.cloneNode(true)
+					el.appendChild(cloneChild.children[0])
+					next = next.nextElementSibling
+				}
+			})
+		</script>
+
 	</body>
 </html>

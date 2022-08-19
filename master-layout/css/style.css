@@ -14,6 +14,7 @@ body {
 /* navbar */
 .btn.btn-search {
 	border: 2;
+	border-left: hidden;
 	border-color: #054389;
 	border-radius: 13px;
 	border-top-right-radius: 20px;
@@ -25,15 +26,12 @@ body {
 }
 .search-input {
 	border: 2;
+	border-right: hidden;
 	border-color: #054389;
 	border-top-right-radius: 0;
 	border-bottom-right-radius: 0;
 	border-bottom-left-radius: 20px;
 	border-top-left-radius: 20px;
-}
-/* carousel */
-.carousel-item {
-	height: 32rem;
 }
 
 /* sejarah */
@@ -46,20 +44,28 @@ body {
 	border: 1px solid #edf2fb;
 	background-color: #edf2fb;
 }
+/* visi */
+.visi {
+	background: url(/asset/bg/bghome.JPG);
+	background-size: cover;
+	height: 400px;
+}
+
 /* parallax */
-/* .parallax { */
-/* The image used */
-/* background-image: url("./asset/Homepage/Carousel3.png"); */
+.parallax {
+	background: url("/asset/Homepage/gedung.png") no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 500px;
+	max-width: 100%;
+}
 
-/* Set a specific height */
-/* min-height: 500px; */
-
-/* Create the parallax scrolling effect */
-/* background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover; */
-/* } */
+.parallax .overplay {
+	background-color: rgba(0, 0, 0, 0.56);
+	height: 500px;
+	max-width: 100%;
+	background-size: cover;
+}
 
 /* footer */
 .table tr {
@@ -75,4 +81,32 @@ footer {
 	height: 300px;
 	bottom: 0;
 	width: 100%;
+}
+/* infografis */
+@media (max-width: 767px) {
+	.sliderr .carousel-inner .carousel-item > div {
+		display: none;
+	}
+	.sliderr .carousel-inner .carousel-item > div:first-child {
+		display: block;
+	}
+}
+.sliderr .carousel-inner .carousel-item.active,
+.sliderr .carousel-inner .carousel-item-next,
+.sliderr .carousel-inner .carousel-item-prev {
+	display: flex;
+}
+@media (min-width: 768px) {
+	.sliderr .carousel-inner .carousel-item-end.active,
+	.sliderr .carousel-inner .carousel-item-next {
+		transform: translateX(25%);
+	}
+	.sliderr .carousel-inner .carousel-item-start.active,
+	.sliderr .carousel-inner .carousel-item-prev {
+		transform: translateX(-25%);
+	}
+}
+.sliderr .carousel-inner .carousel-item-end,
+.sliderr .carousel-inner .carousel-item-start {
+	transform: translateX(0);
 }
